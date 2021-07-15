@@ -1,6 +1,6 @@
 ;;;;
 ;;;; Meta-Circular Evaluator in Scheme, JUST by using:
-;;;; [syntax] lambda with lexical scope, quote, cond
+;;;; [special forms] lambda with lexical scope, quote, cond
 ;;;; [builtin functions] car, cdr, cons, eq?, pair?
 ;;;;
 ;;;; This code is Licensed under CC0.
