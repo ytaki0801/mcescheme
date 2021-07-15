@@ -3,7 +3,7 @@
 ;;;; [special forms] lambda with lexical scope, quote, cond
 ;;;; [builtin functions] car, cdr, cons, eq?, pair?
 ;;;;
-;;;; This code is Licensed under CC0.
+;;;; This code is licensed under CC0.
 ;;;; https://creativecommons.org/publicdomain/zero/1.0/
 ;;;;
 
