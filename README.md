@@ -1,10 +1,19 @@
 # Meta-Circular Evaluator by using lambda with lexical scope
 
+## mce.scm
+
 This Scheme code is a Meta-Circular Evaluator, JUST by using the following special forms and builtin functions, **without *define* special form**.
 
 * Special forms: `lambda` with lexical scope, `quote`, `cond`
 * Builtin functions: `car`, `cdr`, `cons`, `eq?`, `pair?`
 
-U combinators are mainly used to implement the Eval, Apply and other utilities.
+U combinators are mainly used to implement Eval, Apply and other utilities.
 
-This code is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+## mcemce.scm
+
+This code is derived from mce.scm and shows the Meta-Circular Evaluator on the Meta-Circular Evaluator.
+
+## Licence
+
+The codes in this repository are licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
