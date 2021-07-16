@@ -32,8 +32,8 @@
    (cond
     ((pair? F)
      ((U U) (car (cdr (cdr F)))
-      (APD (ALS (car (cdr F)) A)
-	   (car (cdr (cdr (cdr F))))) APD ALS ASQ ECD EAG APY))
+      (APD (ALS (car (cdr F)) A) (car (cdr (cdr (cdr F)))))
+      APD ALS ASQ ECD EAG APY))
     ((eq? F (quote car))   (car (car A)))
     ((eq? F (quote cdr))   (cdr (car A)))
     ((eq? F (quote cons))  (cons (car A) (car (cdr A))))
