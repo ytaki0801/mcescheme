@@ -23,7 +23,7 @@ This code is derived from mce.scm and shows the Meta-Circular Evaluator on the M
 
 * Gauche, Racket
 
-``
+```
 ((lambda (X) (cons X (cons (cons 'quote (cons X '())) '())))
  '(lambda (X) (cons X (cons (cons 'quote (cons X '())) '()))))
 ```
