@@ -1,6 +1,6 @@
 # Meta-Circular Evaluator by using lambda with lexical scope
 
-## `mce.scm`, `mcemce.scm`
+## mce.scm, mcemce.scm
 
 `mce.scm` is a Meta-Circular Evaluator, JUST by using the following special forms and builtin functions, **without *define* special form**.
 
@@ -26,7 +26,7 @@ U combinators are mainly used to implement Eval, Apply and other utilities.
  '(lambda (X) (cons X (cons (cons 'quote (cons X '())) '()))))
 ```
 
-## `mcescm-js.js`, `mcemcescm-js.js`
+## mcescm-js.js, mcemcescm-js.js
 
 `mcescm-js.js` is ported in JavaScript from `mce.scm`. It has no S-expression input/output functions so the Evaluator accepts only JavaScript array syntax as LISP codes.
 
