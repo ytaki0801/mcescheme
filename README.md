@@ -26,29 +26,6 @@ U combinators are mainly used to implement Eval, Apply and other utilities.
  '(lambda (X) (cons X (cons (cons 'quote (cons X '())) '()))))
 ```
 
-## mcescm-js.js, mcemcescm-js.js
-
-`mcescm-js.js` is ported in JavaScript from `mce.scm`. It has no S-expression input/output functions so the Evaluator accepts only JavaScript array syntax as LISP codes, like the following example.
-
-```
-[[['lambda',['U'],['U','U']],
-  ['lambda',['U'],
-   ['lambda',['X','R'],
-    ['cond',
-     [['eq?','X',['quote',[]]],'R'],
-     ['else',[['U','U'],['cdr','X'],['cons','X','R']]]]]]],
- ['quote',['O','O','O','O','O']],
- ['quote',[]]]
-
-// => [ [ 'O' ],
-//      [ 'O', 'O' ],
-//      [ 'O', 'O', 'O' ],
-//      [ 'O', 'O', 'O', 'O' ],
-//      [ 'O', 'O', 'O', 'O', 'O' ] ]
-```
-
-`mcemcescm-js.js` is a Meta-Circular Evaluator ported in JavaScript from `mce.scm` by using `mcescm-js.js`. The Evaluator also accepts only JavaScript array syntax as LISP codes.
-
 ## Licence
 
 The codes in this repository are licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
