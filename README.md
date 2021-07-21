@@ -11,6 +11,10 @@ U combinators are mainly used to implement Eval, Apply and other utilities.
 
 `mcemce.scm` is derived from `mce.scm` and shows the Meta-Circular Evaluator on the Meta-Circular Evaluator.
 
+## eval-mce.scm
+
+`eval-mce.scm` is a short Scheme code of Evaluator to run `mce.scm`, by using the above 8 basics with single quote notation as `quote`, `let`, `append`, `null?`, `map`, `memq`, `assq`, `call-with-input-file`, `read`, `display`, `newline` and utility accessors, without *define* special form. It is just a reference implementation.
+
 ## Quine code
 
 * GNU Guile, Chibi-Scheme, SCM
