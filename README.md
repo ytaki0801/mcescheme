@@ -15,13 +15,7 @@ U combinators are mainly used to implement Eval, Apply and other utilities.
 
 `eval-mce.scm` is a short Scheme code of Evaluator to run `mce.scm`, by using the above 8 basics with single quote notation as `quote`, `let`, `append`, `null?`, `map`, `memq`, `assq`, `call-with-input-file`, `read`, `display`, `newline` and utility accessors, without *define* special form. It is just a reference implementation.
 
-## mce2.scm, S2C.scm, ASSQ-sample.scm, mce2mce2.com
-
-`mce2.scm` is a Meta-Circular Evaluator, just by using special forms `lambda`, `quote` and `if` and builtin functions `eq?` and `procedure?`. Lambda expressions as closures are used to implement `cons` equivalent. `S2C.scm` is a translator to derive from S-expression code to `cons` equivalent code. `ASSQ-sample.scm` is a sample code for `mce2.scm` before translating.
-
-`mce2mce2.scm` is derived from `mce2.scm` and shows the Meta-Circular Evaluator on the Meta-Circular Evaluator.
-
-## Quine code
+## Quine code for mce.scm
 
 * GNU Guile, Chibi-Scheme, SCM
 
@@ -35,6 +29,12 @@ U combinators are mainly used to implement Eval, Apply and other utilities.
 ((lambda (X) (cons X (cons (cons 'quote (cons X '())) '())))
  '(lambda (X) (cons X (cons (cons 'quote (cons X '())) '()))))
 ```
+
+## mce2.scm, S2C.scm, ASSQ-sample.scm, mce2mce2.com
+
+`mce2.scm` is a Meta-Circular Evaluator, just by using `lambda`, `quote`, `if`, `eq?` and `procedure?`. Lambda expressions as closures are used to implement `cons` equivalent. `S2C.scm` is a translator to derive from S-expression code to `cons` equivalent code. `ASSQ-sample.scm` is a sample code for `mce2.scm` before translating.
+
+`mce2mce2.scm` is derived from `mce2.scm` and shows the Meta-Circular Evaluator on the Meta-Circular Evaluator.
 
 ## Licence
 
