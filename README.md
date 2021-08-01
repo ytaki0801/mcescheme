@@ -32,7 +32,9 @@ U combinators are mainly used to implement Eval, Apply and other utilities.
 
 ## mce2.scm, S2C.scm, ASSQ-sample.scm, mce2mce2.com
 
-`mce2.scm` is a Meta-Circular Evaluator, just by using `lambda`, `quote`, `if`, `eq?` and `procedure?`. Lambda expressions as closures are used to implement `cons` equivalent. `S2C.scm` is a translator to derive from S-expression code to `cons` equivalent code. `ASSQ-sample.scm` is a sample code for `mce2.scm` before translating.
+`mce2.scm` is a Meta-Circular Evaluator, just by using `lambda`, `quote`, `if`, `eq?` and `procedure?`. Lambda expressions as closures are used to implement `cons` equivalent.
+
+`S2C.scm` is a translator to derive from S-expression code to `cons` equivalent code. `ASSQ-sample.scm` is a sample code for `mce2.scm` before translating.
 
 `mce2mce2.scm` is derived from `mce2.scm` and shows the Meta-Circular Evaluator on the Meta-Circular Evaluator.
 
